@@ -16,13 +16,21 @@
 
   <tbody>
     <% @friends.each do |friend| %>
-      <%= render friend %>
-      <p>
-        <%= link_to "Show this friend", friend %>
-      </p>
-    <% end %>
+        <tr>
+          <td><%= friend.first_name %></td>
+          <td><%= friend.last_name %></td>
+          <td><%= friend.email %></td>
+          <td><%= friend.phone %></td>
+          <td><%= friend.instagram %></td>
+          <td><%= link_to 'Show', friend %></td>
+          <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
+          <td><%= link_to 'Destroy', friend, method: :delete, data: {confrim: 'Are you sure?'}  %></td>
+        </tr>
+      <% end %>
   </tbody>
-
-  <%= link_to "New friend", new_friend_path %>
 </table>
+
+<br>
+
+<button type="button" class="btn btn-secondary">Add Friend</button>
 
