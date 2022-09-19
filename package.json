@@ -1,0 +1,8 @@
+{
+  "name": "friends",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jmajane/friendslist.git",
+  "author": "Jmajane <jordan.majane@outlook.com>",
+  "license": "MIT"
+}
