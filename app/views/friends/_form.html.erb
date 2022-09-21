@@ -31,6 +31,10 @@
     <%= form.text_field :instagram, class:"form-control", placeholder:"Instagram" %>
   </div>
 
+  <div class= "field form-group">
+    <%= form.text_field :user_id, class:"form-control", value:current_user.id %>
+  </div>
+
   <div class="actions">
     <%= form.submit class:"btn btn-primary" %>
   </div>
